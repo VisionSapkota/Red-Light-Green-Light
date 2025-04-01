@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 70px;
+}
+
+.light {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  position: absolute;
+  left: 0;
+  margin-left: 20px;
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px green, -3px -3px 10px red;
+}
+
+.red,
+.green {
+  background-color: black;
+  height: 100px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.ground {
+  background-color: #c2b280;
+  height: 575px;
+  width: 500px;
+  border-radius: 10px;
+  border: 2px solid red;
+}
+
+.start-line,
+.end-line {
+  background-color: red;
+  height: 2px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.start-line {
+  margin-top: 50px;
+  gap: 10px;
+}
+
+.end-line {
+  margin-top: calc(575px - 100px);
+}
+
+.players {
+  background-color: #008000;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+
+.user {
+  background-color: red;
+}
+
+.guard,
+.doll {
+  background-color: #c83e4d;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+
+.doll {
+  height: 40px;
+  width: 40px;
+  background-color: #e86a33;
+}
+
+.timer {
+  background-color: black;
+  width: 18vw;
+  aspect-ratio: 2/1;
+  border-radius: 20px;
+  font-size: 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  user-select: none;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.message-div {
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  color: black;
+  height: 100vh;
+  width: 100vw;
+  backdrop-filter: blur(10px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.message {
+  text-align: center;
+  padding: 20px;
+  font-size: 50px;
+  font-weight: bold;
+  color: red;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background-color: #008000;
+  color: #fff;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+
+.btn:hover {
+  background-color: #006000;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
